@@ -1,0 +1,245 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; }
+.redactor_dropdown a { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; padding: 10px 0; font-size: 16px; line-height: 1.231; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/bglow.jpg"); font-family: 'Trebuchet MS',Tahoma,sans-serif; }
+body, button, input, select, textarea { font-family: sans-serif; color: #444; }
+::-moz-selection { background: #fe57a1; color: #fff; -webkit-text-shadow: none; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; -webkit-text-shadow: none; text-shadow: none; }
+a { color: #444; }
+    a:visited { color: #666; }
+    a:focus { outline: thin dotted; }
+    a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; -ms-word-wrap: break-word; word-wrap: break-word; }
+q { quotes: none; }
+    q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+label { cursor: pointer; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+    button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+    input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+    button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+    input:valid, textarea:valid { }
+    input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+@font-face { font-family: 'PFSynchProBold'; src: url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Content/fonts/pfsynchpro-bold_0-webfont.eot'); src: local("☺"), url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Content/fonts/pfsynchpro-bold_0-webfont.eot#iefix') format('embedded-opentype'), url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Content/fonts/pfsynchpro-bold_0-webfont.woff') format('woff'), url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Content/fonts/pfsynchpro-bold_0-webfont.ttf') format('truetype'); }
+/* страница */
+#container { margin: 0 auto; width: 1050px; min-height: 600px; }
+/*задние листы*/
+#backsheet1 { margin: 0px auto; margin-left: 55px; border: 2px solid #444; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/sheet.png"); -ms-transform: rotate(1.6deg); -moz-transform: rotate(1.6deg); -o-transform: rotate(1.6deg); -webkit-transform: rotate(1.6deg); transform: rotate(1.6deg); }
+#backsheet2 { border: 2px solid #444; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/sheet.png"); -ms-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -o-transform: rotate(-1deg); -webkit-transform: rotate(-1deg); transform: rotate(-1deg); }
+#sheet { border: 2px solid #444; padding: 10px; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/sheet.png"); -ms-transform: rotate(-0.6deg); -moz-transform: rotate(-0.6deg); -o-transform: rotate(-0.6deg); -webkit-transform: rotate(-0.6deg); transform: rotate(-0.6deg); }
+/*крутая навигация закладки*/
+#headerribbon { height: 45px; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/ribbon.png"); }
+#sections { position: absolute; top: 360px; left: 0px; /*margin-left:10px;*/ }
+    #sections ul { -ms-transform: rotate(-90deg) translateY(-205px); -moz-transform: rotate(-90deg) translateY(-205px); -o-transform: rotate(-90deg) translateY(-205px); -webkit-transform: rotate(-90deg) translateY(-205px); transform: rotate(-90deg) translateY(-205px); }
+    #sections li { float: left; border: 1px solid rgba(0,0,0,0.3); margin: 5px; padding: 2px; background-color: #fff; background-color: rgba(255,255,255,0.6); -ms-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+    #sections a { height: 100%; display: block; float: left; border: 1px dashed #444; margin: 5px; padding-top: 5px; padding-left: 15px; padding-right: 15px; padding-bottom: 600px; font-size: 1.3em; text-decoration: none; }
+        #sections a:visited { color: #444; }
+    #sections li:hover { margin-top: -20px; background-color: #bbb; background-color: rgba(187,187,187,0.6); }
+/*для старого ie*/
+.oldie #sections { left: -50px; }
+    .oldie #sections li { padding: 0px; float: none; border: 1px solid #ccc; }
+    .oldie #sections a { float: none; padding: 5px; border: 1px dashed #444; margin: 2px; font-size: 1em; }
+    .oldie #sections li:hover { margin-top: 5px; }
+/* регистратура*/
+#registrar { margin-top: 8px; margin-left: 10px; margin-right: 20px; width: 322px; height: 31px; float: left; cursor: pointer; /*text-align:right;*/ }
+    #registrar .LoggedAuthor { width: 100%; height: 100%; white-space: nowrap; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/registrar_pale.png"); }
+#logOff { position: absolute; left: 0px; top: -10px; }
+    #logOff a { font-weight: bold; color: rgba(28, 45, 173, 0.78); }
+.LoggedAuthor .title { font-family: "PFSynchProBold","Trebuchet MS",Tahoma,sans-serif; max-width: 331px; overflow: hidden; font-size: 36px; line-height: 30px; text-transform: uppercase; }
+#loginflyout { z-index: 100; display: none; background-color: rgb(202, 195, 195); background-color: rgba(187,187,187,0.6); padding: 10px; top: 30px; border: 1px solid #444; position: absolute; }
+.LoggedAuthor a { color: #111; text-decoration: none; }
+    .LoggedAuthor a:visited { color: #111; }
+.LoggedAuthor img { vertical-align: baseline; }
+/* опубликовать */
+#publishbutton { margin-top: 8px; margin-left: 10px; margin-right: 10px; width: 322px; float: right; }
+/* стата в заголовке*/
+#headerribbon ul { margin: 0px; padding-top: 2px; padding-left: 10px; list-style: none; float: left; }
+#headerribbon li { font-size: 13px; line-height: 13px; color: #eee; font-family: Georgia; font-style: italic; }
+/* секции право лево размер и ссылка "еще"*/
+.more { float: right; }
+.left { float: left; }
+.right { float: right; }
+.small { width: 375px; }
+.smaller { width: 250px; }
+.medium { width: 49.75%; }
+.large { width: 585px; }
+.larger { width: 710px; }
+/* главная страница */
+button { border-radius: 4px; background-color: #ccc; color: #444; border: 1px solid #666; }
+#homepage a { text-decoration: none; }
+#homepage .small h2, #homepage .large h2 { display: block; float: left; margin: 0px; padding-top: 3px; height: 200px; width: 35px; background-repeat: no-repeat; }
+#homepage h2 a { display: block; width: 100%; height: 100%; }
+#homepage #bside h2 { background-image: url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/mph2spr.png'); background-position: -100px; }
+#homepage #freshpub h2 { background-image: url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/mph2spr.png'); background-position: -50px; }
+#homepage #newimg h2 { background-image: url('https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/img/mph2spr.png'); }
+#homepage .block .content { margin-left: 50px; }
+#homepage fieldset { border: 4px solid rgba(0, 0, 0, 0.4); font-size: 0.9em; padding: 5px; padding-left: 10px; padding-top: 8px; overflow: hidden; height: 100px; }
+    #homepage fieldset legend { font-size: 1.2em; font-family: Georgia; font-style: italic; font-weight: bold; padding-left: 5px; padding-right: 5px; text-align: center; }
+#moment img { float: left; margin: 0px; margin-top: -5px; margin-right: 20px; }
+#editorscolumn .line, #moment .line { max-width: 457px; }
+#newimg .content > div { float: left; padding: 0; height: 100px; overflow: hidden; margin: 0 6px 4px 0; }
+.featuredblogs { margin: -10px 0; }
+.featuredblog { width: 33%; float: left; }
+    .featuredblog img { float: left; width: 50px; height: 50px; margin-right: 10px; }
+    .featuredblog h3 { float: left; font-size: 12px; margin: 0; width: 250px; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
+    .featuredblog .summary { float: left; font-size: 12px; width: 250px; margin-top: 5px; }
+#freshpub { line-height: 1.15em; }
+#bside { height: 205px; overflow: hidden; }
+    #bside p { margin: 0px; margin-bottom: 10px; line-height: 1.1em; }
+.bsidesummary { margin-bottom: 10px; }
+#homepage .bsidesummary { margin-bottom: 2px; }
+.bsidesummary h3 { margin: 0px; }
+#faces .AuthorPicture { float: left; width: 90px; height: 90px; padding-bottom: 2px; padding-left: 2px; text-align: center; overflow: hidden; }
+.AuthorPicture img { width: 100%; }
+/* фильтры на страницах авторы и публикации*/
+section.filter { background-color: rgb(208, 208, 208); background-color: rgba(0, 0, 0, 0.1); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 10px; margin-top: 5px; margin-bottom: 5px; }
+    section.filter h2 { float: left; margin: -10px 15px 10px 0px; padding: 6px 15px 6px 15px; background-color: #e5e0d9; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; border: 1px dashed #767676; border-top-color: transparent; }
+    section.filter #search { float: left; margin-right: 20px; margin-bottom: 5px; }
+    section.filter ul { list-style: none; margin: 0px; padding: 0px; }
+    section.filter li { float: left; padding: 1px; padding-left: 8px; padding-right: 8px; margin-right: 10px; }
+    section.filter .ordering li { padding: 0px; }
+.ordering a { display: block; width: 100%; height: 100%; }
+.filtering li.youarehere { background-color: #F8EBBF; border: solid 1px #E2D6B0; border-color: rgba(0,0,0,0.1); -moz-box-shadow: 1px 2px 3px #d4c390 inset; -o-box-shadow: 1px 2px 3px #d4c390 inset; -webkit-box-shadow: 1px 2px 3px #d4c390 inset; box-shadow: 1px 2px 3px #d4c390 inset; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.filtering a { text-decoration: none; border-bottom: 1px dotted #444; }
+.filtering li.youarehere a { border: none; }
+.ordering li { padding: 0px; width: 24px; height: 24px; }
+.ordering a { display: block; width: 100%; height: 100%; }
+section.filter li.cup { background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Img/icons/cup24.png"); background-repeat: no-repeat; }
+section.filter li.reg { background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Img/icons/round_up_arrow_24x24.png"); background-repeat: no-repeat; }
+section.filter li.talk { background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Img/icons/comment_24x24.png"); background-repeat: no-repeat; }
+/* страница авторы*/
+.memberlist .authorwithstats { float: left; height: 60px; width: 250px; padding: 5px; margin-right: 8px; margin-bottom: 8px; border: 1px dashed #888; border-color: rgba(0, 0, 0, 0.2); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.authorwithstats .photo { float: left; margin-right: 5px; width: 50px; height: 50px; }
+#authorspage { margin-right: 180px; }
+.memberlist .authorwithstats .membername { font-size: 1.2em; }
+.memberlist .authorwithstats .userstats { position: absolute; bottom: 0px; right: 3px; color: #767676; color: rgba(0,0,0,0.4); font-weight: bold; font-family: Calibri; }
+.rating { padding-left: 12px; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Img/icons/cup24.png"); background-repeat: no-repeat; background-position: left center; -moz-background-size: 10px; -o-background-size: 10px; -webkit-background-size: 10px; background-size: 10px; }
+.oldie .rating { padding-left: 12px; background-image: url("https://web.archive.org/web/20181208070621im_/http://static.artefakt.ru/Img/icons/cup24.png"); background-repeat: no-repeat; background-position: left center; -moz-background-size: 10px; -o-background-size: 10px; -webkit-background-size: 10px; background-size: 10px; }
+/* публикации */
+#publicationspage ul.publications { margin: 0px; padding: 0px; list-style: none; margin-right: 180px; }
+    #publicationspage ul.publications li { height: 1.5em; }
+/* публикация */
+#comments ul { margin: 0px; padding: 0px; list-style: none; }
+#comments h4 { margin: 0px; margin-top: 20px; }
+#cf { margin-top: 20px; margin-bottom: 20px; }
+    #cf .expandingArea { margin-left: 42px; margin-right: 10px; width: 500px; }
+    #cf button { padding: 8px; background: #DDD; border: 1px solid #444; position: absolute; bottom: 0; }
+        #cf button:hover { background: #eee; }
+        #cf button:disabled { background: #ccc; color: #767676; border-color: #aaa; }
+    #cf .AuthorPicture { float: left; width: 40px; }
+.expandingArea { position: relative; border: 1px solid rgba(0, 0, 0, 0.20); background-color: #fff; background: rgba(255, 255, 255, 0.50); border-radius: 5px; }
+    .expandingArea > textarea,
+    .expandingArea > pre { padding: 5px; background: transparent; font: 400 13px/16px helvetica, arial, sans-serif; border: 0; white-space: pre-wrap; -ms-word-wrap: break-word; word-wrap: break-word; }
+    .expandingArea > textarea { /*-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;*/ width: 100%; height: 80px; }
+    .expandingArea.active > textarea { overflow: hidden; position: absolute; top: 0; left: 0; height: 100%; resize: none; }
+    .expandingArea > pre { display: none; }
+    .expandingArea.active > pre { display: block; visibility: hidden; }
+.comment aside { float: left; width: 40px; text-align:center; }
+.comment .content { margin-left: 55px; }
+.comment { margin-top: 10px; }
+    .comment .author { font-weight: bold; }
+    .comment p { margin: 5px 0 10px; }
+
+    .commentactions {
+position: absolute;
+top: 0;
+right: 0;
+background-color: rgba(255,0,0,0.3);
+padding: 4px 10px;
+display: none;
+}
+    .comment:hover .commentactions{
+        display:block;
+    }
+/* изнанка */
+#bsidebody { margin-right: 180px; }
+/*спецуха*/
+hr.big { margin: 0px; margin-bottom: 16px; margin-top: 16px; height: 2px; border-color: #888; border-top: 8px solid; border-bottom: 1px solid; border-color: rgba(0,0,0,0.4); }
+#main hr.big:first-child { margin-top: 5px; margin-bottom: 8px; }
+#main hr.big:last-child { margin-top: 8px; margin-bottom: 5px; }
+.line { white-space: nowrap; overflow: hidden; }
+.datetime { color: #767676; color: rgba(0,0,0,0.4); font-size: 0.8em; font-weight: bold; font-family: Calibri; }
+.title a { font-weight: bold; text-decoration: none; }
+.category { font-family: Calibri; font-size: 0.8em; color: #767676; color: rgba(0,0,0,0.4); }
+.specialarrows { position: absolute; bottom: 3px; right: 10px; font-size: 1.1em; }
+.expander { cursor: pointer; margin: 0 10px; }
+.continuation { display: none; }
+/* подвал */
+footer .copy { font-size: 0.7em; line-height: 1.2em; }
+#contentslinks ul { list-style: none; margin: 5px 40px 20px 0px; padding: 0; font-size: 13px; float: left; }
+#contentslinks a { text-decoration: none; }
+#contentslinks strong { font-size: 14px; font-weight: bold; }
+/* PagedList Classes*/
+.PagedList-pager > ul { display: block; margin: 0; padding: 0; list-style: none; }
+    .PagedList-pager > ul > li { margin: .25em; display: inline-block; }
+.PagedList-goToPage > fieldset { border: 0; }
+.PagedList-pager a:visited { color: #666; }
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+    .ir br { display: none; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+    .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { -ms-zoom: 1; zoom: 1; }
+
+@media print {
+    * { background: transparent !important; color: black !important; -webkit-text-shadow: none !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+        a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}
+
+/*
+     FILE ARCHIVED ON 07:06:21 Dec 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:06:24 Nov 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 15.448
+  load_resource: 271.681 (2)
+  PetaboxLoader3.resolve: 147.411 (2)
+  PetaboxLoader3.datanode: 63.809 (2)
+  revisit.resolve: 151.196
+*/
